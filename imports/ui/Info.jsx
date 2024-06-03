@@ -11,7 +11,7 @@ export const Info = () => {
     return <div>Loading...</div>;
   }
 
-  console.log(Meteor.settings?.public);
+  console.log(Meteor.settings.public.client_and_server_setting);
   return (
     <div>
       <h2>Learn Meteor!</h2>
