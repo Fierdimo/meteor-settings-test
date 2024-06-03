@@ -12,7 +12,7 @@ export const Info = () => {
   }
 
   console.log(
-    Meteor.call("get_envioroment", (err, resp) => {
+    Meteor.call("get_enviroment", (err, resp) => {
       if (err) console.log(err);
       console.log(resp);
     })
