@@ -11,7 +11,12 @@ export const Info = () => {
     return <div>Loading...</div>;
   }
 
-  console.log(Meteor.settings.public.client_and_server_setting);
+  console.log(
+    Meteor.call("get_envioroment", (err, resp) => {
+      if (err) console.log(err);
+      console.log(resp);
+    })
+  );
   return (
     <div>
       <h2>Learn Meteor!</h2>
